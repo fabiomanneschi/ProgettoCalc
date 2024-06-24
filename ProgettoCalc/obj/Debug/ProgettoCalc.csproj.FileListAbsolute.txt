@@ -1,0 +1,8 @@
+C:\GIT\ProgettoCalc\ProgettoCalc\bin\Debug\ProgettoCalc.exe.config
+C:\GIT\ProgettoCalc\ProgettoCalc\bin\Debug\ProgettoCalc.exe
+C:\GIT\ProgettoCalc\ProgettoCalc\bin\Debug\ProgettoCalc.pdb
+C:\GIT\ProgettoCalc\ProgettoCalc\obj\Debug\ProgettoCalc.csproj.AssemblyReference.cache
+C:\GIT\ProgettoCalc\ProgettoCalc\obj\Debug\ProgettoCalc.csproj.SuggestedBindingRedirects.cache
+C:\GIT\ProgettoCalc\ProgettoCalc\obj\Debug\ProgettoCalc.csproj.CoreCompileInputs.cache
+C:\GIT\ProgettoCalc\ProgettoCalc\obj\Debug\ProgettoCalc.exe
+C:\GIT\ProgettoCalc\ProgettoCalc\obj\Debug\ProgettoCalc.pdb
