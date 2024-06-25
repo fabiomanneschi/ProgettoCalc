@@ -1,6 +1,7 @@
 ﻿
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ProgettoCalc;
+using System;
 using System.ComponentModel;
 using System.Threading;
 
@@ -77,26 +78,19 @@ namespace ProgettoCalc.Tests
             Assert.AreEqual(1, actual);
         }
         [TestMethod]
-        //[DataRow(2, 0)]
-        //[DataRow(2, 1)]
+        [DataRow(2, 0)]
+        [DataRow(2, 1)]
         [DataRow(2, 2)]
-        public void potenzaTest(int b, int p)
+        public void potenzaTest(int b, int e)
         {
             // Arrange
             var calculator = new Calculator();
 
             // Act
-            var actual = calculator.Potenza(b, p);
-            var ris = b^p;
-            //if (p == 0) 
-            //    { ris = 1; }
-            //else
-            //    {
-            //        for (int i = 1; i < p;)
-            //        {
-            //            ris = ris * b;
-            //        }
-            //    }
+            var actual = calculator.Potenza(b, e);
+            var ris = (int)Math.Pow(b,e);
+ 
+            //Console.WriteLine("Risultato test = " + ris.ToString());
             // Assert
             Assert.AreEqual(ris, actual);
         }

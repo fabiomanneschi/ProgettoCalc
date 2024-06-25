@@ -6,3 +6,11 @@ C:\GIT\ProgettoCalc\ProgettoCalc\obj\Debug\ProgettoCalc.csproj.SuggestedBindingR
 C:\GIT\ProgettoCalc\ProgettoCalc\obj\Debug\ProgettoCalc.csproj.CoreCompileInputs.cache
 C:\GIT\ProgettoCalc\ProgettoCalc\obj\Debug\ProgettoCalc.exe
 C:\GIT\ProgettoCalc\ProgettoCalc\obj\Debug\ProgettoCalc.pdb
+d:\GIT\ProgettoCalc\ProgettoCalc\bin\Debug\ProgettoCalc.exe.config
+d:\GIT\ProgettoCalc\ProgettoCalc\bin\Debug\ProgettoCalc.exe
+d:\GIT\ProgettoCalc\ProgettoCalc\bin\Debug\ProgettoCalc.pdb
+d:\GIT\ProgettoCalc\ProgettoCalc\obj\Debug\ProgettoCalc.csproj.AssemblyReference.cache
+d:\GIT\ProgettoCalc\ProgettoCalc\obj\Debug\ProgettoCalc.csproj.SuggestedBindingRedirects.cache
+d:\GIT\ProgettoCalc\ProgettoCalc\obj\Debug\ProgettoCalc.csproj.CoreCompileInputs.cache
+d:\GIT\ProgettoCalc\ProgettoCalc\obj\Debug\ProgettoCalc.exe
+d:\GIT\ProgettoCalc\ProgettoCalc\obj\Debug\ProgettoCalc.pdb

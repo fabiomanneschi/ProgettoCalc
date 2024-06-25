@@ -36,23 +36,26 @@ namespace ProgettoCalc
                     return null;
                 }
             }
-            public int? Potenza(int x, int y)
+            public int? Potenza(int b, int e)
             {
-            //try
-            //{
-                var ris = 0;
-                ris = x ^ y;
-                return (ris);
-            //}
-            //catch
-            //{
-            //    Console.WriteLine("Attenzione risultato out of range per var intere");
-            //    return null;
-            //}
+            
+                if (e == 0)
+                {
+                    return 1;
+                }
+                else if (e < 0)
+                {
+                    throw new Exception("Errore: l'esponente deve essere non negativo.");
+                }
+                else
+                {
+                    return b * Potenza(b, e - 1);
+                }
+            }
         }
 
 
-    }
+  
     
 
 }
