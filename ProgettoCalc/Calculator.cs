@@ -38,6 +38,12 @@ namespace ProgettoCalc
         }
         public ElementiListaTest RestituisciElementoAllaPosizioneX(int i)
         {
+            if (i < 0 || i >= elementi.Count)
+            {
+                throw new ArgumentOutOfRangeException(nameof(i));
+
+            }
+
             return elementi[i];
         }
 
