@@ -23,11 +23,26 @@ namespace ProgettoCalc.Tests
 
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void ConteggioElementiTest()
         {
             int valoreIniziale = elementi.NumeroElementi();
             elementi.Aggiungi(2, "due");
+            elementi.RestituisciElementoAllaPosizioneX(10);
+
             Assert.AreEqual(valoreIniziale + 1, elementi.NumeroElementi());
+            Assert.IsTrue(true);
+
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void RestituisciElementoAllaPosizioneXTest()
+        {
+            int valoreIniziale = elementi.NumeroElementi();
+            elementi.Aggiungi(2, "due");
+            elementi.RestituisciElementoAllaPosizioneX(10);
+
         }
 
         [TestMethod]
@@ -40,6 +55,7 @@ namespace ProgettoCalc.Tests
             Assert.AreEqual(2, elementi.RestituisciElementoAllaPosizioneX(valoreIniziale).Numero);
             Assert.AreEqual("due", elementi.RestituisciElementoAllaPosizioneX(valoreIniziale).Testo);
         }
+
 
 
         [TestMethod]
