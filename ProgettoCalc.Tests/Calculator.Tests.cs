@@ -7,9 +7,41 @@ using System.Threading;
 
 namespace ProgettoCalc.Tests
 {
+
+
     [TestClass]
     public class CalculatorTests
     {
+
+        private ListaElementi elementi;
+
+        [TestInitialize]
+        public void Init()
+        {
+            elementi = new ListaElementi();
+        }
+
+
+        [TestMethod]
+        public void ConteggioElementiTest()
+        {
+            int valoreIniziale = elementi.NumeroElementi();
+            elementi.Aggiungi(2, "due");
+            Assert.AreEqual(valoreIniziale + 1, elementi.NumeroElementi());
+        }
+
+        [TestMethod]
+        public void ElementoAggiuntoTest()
+        {
+            int valoreIniziale = elementi.NumeroElementi();
+            elementi.Aggiungi(2, "due");
+            elementi.Aggiungi(3, "tre");
+
+            Assert.AreEqual(2, elementi.RestituisciElementoAllaPosizioneX(valoreIniziale).Numero);
+            Assert.AreEqual("due", elementi.RestituisciElementoAllaPosizioneX(valoreIniziale).Testo);
+        }
+
+
         [TestMethod]
         public void CalculatorNullTest()
         {

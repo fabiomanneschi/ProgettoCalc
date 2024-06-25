@@ -6,8 +6,43 @@ using System.Threading.Tasks;
 
 namespace ProgettoCalc
 {
+    public class ElementiListaTest
+    {
+        public int Numero { get; set; }
+        public string Testo { get; set; }
 
-        public class Calculator
+        public ElementiListaTest(int num, string testo)
+        {
+            Numero = num;
+            Testo = testo;
+        }
+    }
+    public class ListaElementi
+    {
+        private List<ElementiListaTest> elementi;
+
+        public ListaElementi()
+        {
+            elementi = new List<ElementiListaTest>();
+        }
+        public void Aggiungi(int i, string s)
+        {
+            ElementiListaTest ELT = new ElementiListaTest(i, s);
+
+            elementi.Add(ELT);
+
+        }
+        public int NumeroElementi()
+        {
+            return elementi.Count;
+        }
+        public ElementiListaTest RestituisciElementoAllaPosizioneX(int i)
+        {
+            return elementi[i];
+        }
+
+    }
+    public class Calculator
         {
             public int Add(int x, int y)
             {
